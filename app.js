@@ -4,7 +4,7 @@ let userseq = [];
 let gameseq = [];
 var heigest = 0
 
-document.addEventListener("dblclick", function () {
+document.addEventListener("click", function () {
     if (press == false) {
 
         let h2 = this.querySelector("h2");
@@ -30,7 +30,7 @@ for (ele of buttons) {
         for (let i = 0; i < userseq.length; i++) {
             if (userseq[i] != gameseq[i]) {
                 let h2 = document.querySelector("h2")
-                h2.innerText = `Game Over! Your score is ${level - 1} -----------Dbl click to start again`;
+                h2.innerText = `Game Over! Your score is ${level - 1} -----------click anywhere to start again`;
                 userseq = [];
                 gameseq = [];
                 press = false;
